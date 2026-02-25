@@ -463,6 +463,7 @@
     z-index: 1;
 }
 
+
 .card-main .card-overlay {
     position: relative;
     background: none;
@@ -974,9 +975,10 @@ p {
 }
 
 
-.icon-box {
-    background-color: #31a94b;
+.icon-box-1{
+    background-color: #32eb5a;
     width: 100%;
+    
     aspect-ratio: 1 / 0.7;
     border-radius: 10px 40px 10px 10px;
     display: flex;
@@ -984,8 +986,7 @@ p {
     align-items: center;
     margin-bottom: 15px;
     color: white;
-    font-size: 3rem;
-}
+    font-size: 3rem;}
 
 .item p {
     font-size: 0.95rem;
