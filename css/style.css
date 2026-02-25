@@ -1182,10 +1182,6 @@ p {
     transition: transform 0.3s;
 }
 
-.logo-item img:hover {
-    transform: scale(1.05);
-}
-
 .footer {
     background-color: #2d3737;
     color: #ffffff;
