@@ -1,0 +1,145 @@
+:root {
+  --primary-green: #2d3e3a;
+  --accent-orange: #ff6200;
+  --text-gray: #555;
+  --light-bg: #fdfdf5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+
+.top-bar {
+  background: var(--light-bg);
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.top-nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: var(--text-gray);
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  padding: 5px 30px 5px 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+
+.middle-bar {
+  padding: 20px 0;
+  background: var(--light-bg);
+}
+
+.logo img {
+  height: 80px;
+}
+
+.info-item {
+  font-size: 13px;
+  color: var(--text-gray);
+  line-height: 1.4;
+}
+
+.info-item a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.callback-btn {
+  background: var(--accent-orange);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.main-nav {
+  background: var(--primary-green);
+  color: white;
+  padding: 15px 0;
+}
+
+.menu-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.menu-list a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.cart-total {
+  color: #4CAF50;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+
+
+
+@media (max-width: 1024px) {
+  .middle-bar .container {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .top-nav {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-list {
+    display: none;
+  }
+
+  .address,
+  .socials {
+    display: none;
+  }
+
+  .middle-bar .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+}
+
