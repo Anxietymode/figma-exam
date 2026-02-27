@@ -331,6 +331,16 @@ ul {
   .menu-list {
     display: none;
   }
+  .middle-bar .container {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .top-nav {
+    display: none;
+  }
+
 
   }
 }
@@ -341,14 +351,5 @@ ul {
   }
 }
 
-@media (max-width: 1024px) {
-  .middle-bar .container {
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-  }
 
-  .top-nav {
-    display: none;
-  }
-}
+  
