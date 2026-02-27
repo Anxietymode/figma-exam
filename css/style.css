@@ -18,6 +18,53 @@
     flex-wrap: wrap;
 }
 
+#loader {
+  position: fixed;
+  /* top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; */
+  inset: 0;
+  background: #fffafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+
+  animation: loaderHide 0.5s ease forwards;
+}
+#loader .spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid #333;
+  border-top: 3px solid #4ec7f3;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  animation-fill-mode: backwards;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loaderHide {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
 
 .top-bar {
     background: #fff;
