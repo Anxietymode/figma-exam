@@ -31,7 +31,7 @@
   justify-content: center;
   z-index: 9999;
 
-  animation: loaderHide 0.5s ease forwards;
+  animation: loaderHide 1.5s ease forwards;
 }
 #loader .spinner {
   width: 36px;
@@ -39,7 +39,7 @@
   border: 3px solid #333;
   border-top: 3px solid #4ec7f3;
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  animation: spin 3s linear infinite;
   animation-fill-mode: backwards;
 }
 
